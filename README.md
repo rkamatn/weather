@@ -1,6 +1,6 @@
-# Project Title (This is a template README.md file that you can adapt to your project)
+# Weather Analysis
 
-> A brief description of what the project does and its purpose.
+## A brief description of what the project does and its purpose.
 This project compares whether it rains more in Seattle or Portland using a 5 year historical weather data.
 
 ---
