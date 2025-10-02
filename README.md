@@ -1,7 +1,7 @@
 # Weather Analysis
 
 ## A brief description of what the project does and its purpose.
-This project compares whether it rains more in Seattle or Portland using a 5 year historical weather data.
+This project compares whether it rains more in Seattle or NYC using a 5 year historical weather data.
 
 ---
 
@@ -39,12 +39,12 @@ Provide a short and concise overview of the project. Mention the problem it solv
 
 ### Data Cleaning
 
-Precipitation data is downloaded from NOAA's Climate Data Online Search tool for Seattle and Portland from the dates Jan 1 2018 to Dec 31 2022.
+Precipitation data is downloaded from NOAA's Climate Data Online Search tool for Seattle and NYC from the dates Jan 1 2018 to Dec 31 2022.
 
-Name of the file that performs the data preparation: weather/code/Seattle_Portland_Weather_Data.ipynb
+Name of the file that performs the data preparation: weather/code/seattle_nyc_weather_data.ipynb
 
 #### Import pandas, numpy, and matplotlib libraries
-#### Load the Seattle & Portland Data set using read_csv
+#### Load the Seattle & NYC Data set using read_csv
 #### Start by looking at the head of each Dataframe using .head()
 #### Check for the columns in each dataframe using .columns
 #### Use the info() method to check the data types, size of the data frame, and numbers of missing values.
@@ -54,12 +54,12 @@ Name of the file that performs the data preparation: weather/code/Seattle_Portla
 #### Check for ‘DATE’ column and covert it to datetime using to_datetime()
 #### Check for the range of dates on each dataframe using ‘min’ and ‘max’ function
 #### Plot the daily precipitation for each city
-#### Join the Portland and Seattle dataframes keeping the date and precipitation column using outer join
+#### Join the NYC and Seattle dataframes keeping the date and precipitation column using outer join
 #### Create a tidy data frame for columns city and precipitation.
-#### Rename the city values to ‘PORT’ and ‘SEA
+#### Rename the city values to ‘NYC’ and ‘SEA
 #### Rename the columns to lowercase using .rename()
 #### Identify the missing values using .isna().sum()
-#### Count the null values in the precipitation column for Portland
+#### Count the null values in the precipitation column for NYC
 #### Count the null values in the precipitation column for Seattle
 #### Impute missing values by designing an algorithm to replace the null values with the mean across years of values on that day.
 - Create a new column for the day of the year
@@ -69,7 +69,7 @@ Name of the file that performs the data preparation: weather/code/Seattle_Portla
 - Replace the null values in precipitation to the mean values
 - Check for null values in the dataframe
 #### Export the clean .csv file.
-Name of the cleaned csv file: data/clean_seattle_portland_weather.csv
+Name of the cleaned csv file: data/clean_seattle_NYC_weather.csv
 
 ## Results
 
